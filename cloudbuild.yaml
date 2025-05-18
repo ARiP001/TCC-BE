@@ -3,7 +3,7 @@ steps:
     args:
        - "build"
        - "-f"
-       - "backend/Dockerfile"  # Specify the path to the Dockerfile
+       - "Dockerfile"  # Specify the path to the Dockerfile
        - "-t"
        - "gcr.io/$PROJECT_ID/tcc-be"
        - "backend"  # Set the build context to the backend folder
