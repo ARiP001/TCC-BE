@@ -1,0 +1,96 @@
+//======================= NOTE REQUEST ==========================
+
+GET http://localhost:7000/notes
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwibmFtZSI6ImpvaG4gZG9lIiwiZW1haWwiOiJqb2huZG9lQGdtYWlsLmNvbSIsImdlbmRlciI6IkZlbWFsZSIsImNyZWF0ZWRBdCI6IjIwMjUtMDUtMTNUMTU6NTg6MDguMDAwWiIsInVwZGF0ZWRBdCI6IjIwMjUtMDUtMTRUMDg6MDY6MTEuMDAwWiIsImlhdCI6MTc0NzIxMDE1MSwiZXhwIjoxNzQ3MjEwMTgxfQ.HbdSbqEHGWq14IkFc43jr8EEn_bNOkN9trOPOdos1xQ
+###
+
+POST  http://localhost:7000/notes
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwibmFtZSI6ImpvaG4gZG9lIiwiZW1haWwiOiJqb2huZG9lQGdtYWlsLmNvbSIsImdlbmRlciI6IkZlbWFsZSIsImNyZWF0ZWRBdCI6IjIwMjUtMDUtMTNUMTU6NTg6MDguMDAwWiIsInVwZGF0ZWRBdCI6IjIwMjUtMDUtMTRUMDg6MDY6MTEuMDAwWiIsImlhdCI6MTc0NzIxMDE1MSwiZXhwIjoxNzQ3MjEwMTgxfQ.HbdSbqEHGWq14IkFc43jr8EEn_bNOkN9trOPOdos1xQ
+Content-Type: application/json
+
+{
+    "owner": "riri",
+    "title": "kon",
+    "detail": "ini adalah tugas auth",
+    "tag": "Tugas"
+}
+###
+
+DELETE   http://localhost:7000/notes/4
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwibmFtZSI6ImpvaG4gZG9lIiwiZW1haWwiOiJqb2huZG9lQGdtYWlsLmNvbSIsImdlbmRlciI6IkZlbWFsZSIsImNyZWF0ZWRBdCI6IjIwMjUtMDUtMTNUMTU6NTg6MDguMDAwWiIsInVwZGF0ZWRBdCI6IjIwMjUtMDUtMTRUMDg6MDY6MTEuMDAwWiIsImlhdCI6MTc0NzIxMDAxNywiZXhwIjoxNzQ3MjEwMDQ3fQ.n6ILDeowV2JZzu0cfoI9L8T89VbAuh0_q3nZqoIcBTo
+
+###
+
+GET    http://localhost:7000/notes/5
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwibmFtZSI6ImpvaG4gZG9lIiwiZW1haWwiOiJqb2huZG9lQGdtYWlsLmNvbSIsImdlbmRlciI6IkZlbWFsZSIsImNyZWF0ZWRBdCI6IjIwMjUtMDUtMTNUMTU6NTg6MDguMDAwWiIsInVwZGF0ZWRBdCI6IjIwMjUtMDUtMTRUMDg6MDY6MTEuMDAwWiIsImlhdCI6MTc0NzIxMDAxNywiZXhwIjoxNzQ3MjEwMDQ3fQ.n6ILDeowV2JZzu0cfoI9L8T89VbAuh0_q3nZqoIcBTo
+
+###
+
+PATCH   http://localhost:7000/notes/5
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwibmFtZSI6ImpvaG4gZG9lIiwiZW1haWwiOiJqb2huZG9lQGdtYWlsLmNvbSIsImdlbmRlciI6IkZlbWFsZSIsImNyZWF0ZWRBdCI6IjIwMjUtMDUtMTNUMTU6NTg6MDguMDAwWiIsInVwZGF0ZWRBdCI6IjIwMjUtMDUtMTRUMDg6MDY6MTEuMDAwWiIsImlhdCI6MTc0NzIxMDAxNywiZXhwIjoxNzQ3MjEwMDQ3fQ.n6ILDeowV2JZzu0cfoI9L8T89VbAuh0_q3nZqoIcBTo
+Content-Type: application/json
+
+{
+    "owner": "arif"
+    # "title": "tugas auth",
+    # "detail": "ini adalah tugas auth",
+    # "tag": "Tugas"
+}
+###
+
+GET    http://localhost:7000/notes/search/ri
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwibmFtZSI6ImpvaG4gZG9lIiwiZW1haWwiOiJqb2huZG9lQGdtYWlsLmNvbSIsImdlbmRlciI6IkZlbWFsZSIsImNyZWF0ZWRBdCI6IjIwMjUtMDUtMTNUMTU6NTg6MDguMDAwWiIsInVwZGF0ZWRBdCI6IjIwMjUtMDUtMTRUMDg6MDY6MTEuMDAwWiIsImlhdCI6MTc0NzIxMDAxNywiZXhwIjoxNzQ3MjEwMDQ3fQ.n6ILDeowV2JZzu0cfoI9L8T89VbAuh0_q3nZqoIcBTo
+
+###
+
+//======================== USER REQUEST ==========================
+
+###
+POST http://localhost:7000/register
+Content-Type: application/json
+
+{
+    "name": "john doe",
+    "email": "johndoe@gmail.com",
+    "gender": "Female",
+    "password": "123456"
+}
+
+### 
+
+GET http://localhost:7000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwibmFtZSI6ImpvaG4gZG9lIiwiZW1haWwiOiJqb2huZG9lQGdtYWlsLmNvbSIsImdlbmRlciI6IkZlbWFsZSIsImNyZWF0ZWRBdCI6IjIwMjUtMDUtMTNUMTU6NTg6MDguMDAwWiIsInVwZGF0ZWRBdCI6IjIwMjUtMDUtMTRUMDg6MDY6MTEuMDAwWiIsImlhdCI6MTc0NzIxMDAxNywiZXhwIjoxNzQ3MjEwMDQ3fQ.n6ILDeowV2JZzu0cfoI9L8T89VbAuh0_q3nZqoIcBTo
+###
+
+
+PATCH http://localhost:7000/users/4
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwibmFtZSI6ImpvaG4gZG9lIiwiZW1haWwiOiJqb2huZG9lQGdtYWlsLmNvbSIsImdlbmRlciI6IkZlbWFsZSIsImNyZWF0ZWRBdCI6IjIwMjUtMDUtMTNUMTU6NTg6MDguMDAwWiIsInVwZGF0ZWRBdCI6IjIwMjUtMDUtMTRUMDg6MDY6MTEuMDAwWiIsImlhdCI6MTc0NzIxMDAxNywiZXhwIjoxNzQ3MjEwMDQ3fQ.n6ILDeowV2JZzu0cfoI9L8T89VbAuh0_q3nZqoIcBTo
+Content-Type: application/json
+
+{
+    "name": "arif fathurrahmanflkdjfkdf"
+    # "email": "havas@gmail.com",
+    # "gender": "Male",
+    # "password": "123456"
+}
+
+###
+
+DELETE http://localhost:7000/logout/7
+
+
+###
+
+POST http://localhost:7000/login
+Content-Type: application/json
+
+{
+   
+    "email": "johndoe@gmail.com",
+    "password": "123456"
+}
+
+
+###
+GET http://localhost:7000/token
+Cookie: refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwibmFtZSI6ImpvaG4gZG9lIiwiZW1haWwiOiJqb2huZG9lQGdtYWlsLmNvbSIsImdlbmRlciI6IkZlbWFsZSIsImNyZWF0ZWRBdCI6IjIwMjUtMDUtMTNUMTU6NTg6MDguMDAwWiIsInVwZGF0ZWRBdCI6IjIwMjUtMDUtMTRUMDc6NTk6MjMuMDAwWiIsImlhdCI6MTc0NzIwOTk3MSwiZXhwIjoxNzQ3Mjk2MzcxfQ.0T4oto7B8Kb6fLQG5ljUX002irsnBKiYkMn73N3bjQE

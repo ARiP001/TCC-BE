@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>Selamat datang di Aplikasi Notes</h3>
+    <div>Daftar Endpoint API:</div>
+    <table border="1">
+      <thead>
+        <tr>
+          <td>Metode</td>
+          <td>Endpoint</td>
+          <td>Deskripsi</td>
+        </tr>
+      </thead>
+      <tbody style="font-family: monospace">
+        <tr>
+          <td>GET</td>
+          <td>/notes</td>
+          <td>Mengambil seluruh data dari tabel notes.</td>
+        </tr>
+        <tr>
+          <td>GET</td>
+          <td>/notes/:id</td>
+          <td>Mengambil data dari tabel notes berdasarkan id.</td>
+        </tr>
+        <tr>
+          <td>POST</td>
+          <td>/notes</td>
+          <td>Menambahkan data baru ke tabel notes.</td>
+        </tr>
+        <tr>
+          <td>PATCH</td>
+          <td>/notes/:id</td>
+          <td>Mengubah data dari tabel notes berdasarkan id.</td>
+        </tr>
+        <tr>
+          <td>DELETE</td>
+          <td>/notes/:id</td>
+          <td>Menghapus data dari tabel notes berdasarkan id.</td>
+        </tr>
+        <tr>
+          <td>GET</td>
+          <td>/notes/search/:owner</td>
+          <td>Mencari data dari tabel notes berdasarkan owner.</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
