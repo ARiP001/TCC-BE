@@ -1,7 +1,7 @@
 //======================= NOTE REQUEST ==========================
 
 GET http://localhost:7000/notes
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwibmFtZSI6ImpvaG4gZG9lIiwiZW1haWwiOiJqb2huZG9lQGdtYWlsLmNvbSIsImdlbmRlciI6IkZlbWFsZSIsImNyZWF0ZWRBdCI6IjIwMjUtMDUtMTNUMTU6NTg6MDguMDAwWiIsInVwZGF0ZWRBdCI6IjIwMjUtMDUtMTRUMDg6MDY6MTEuMDAwWiIsImlhdCI6MTc0NzIxMDE1MSwiZXhwIjoxNzQ3MjEwMTgxfQ.HbdSbqEHGWq14IkFc43jr8EEn_bNOkN9trOPOdos1xQ
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwibmFtZSI6ImpvaG4gZG9lIiwiZW1haWwiOiJqb2huZG9lQGdtYWlsLmNvbSIsImdlbmRlciI6IkZlbWFsZSIsImNyZWF0ZWRBdCI6IjIwMjUtMDUtMTNUMTU6NTg6MDguMDAwWiIsInVwZGF0ZWRBdCI6IjIwMjUtMDUtMThUMDU6MjU6MDcuMDAwWiIsImlhdCI6MTc0NzU0NzQwMSwiZXhwIjoxNzUwMTM5NDAxfQ.D_aUcfNhlEVx12sXKEXj1jf3Wxq_q-CEBL1zpK2lsIQ
 ###
 
 POST  http://localhost:7000/notes
