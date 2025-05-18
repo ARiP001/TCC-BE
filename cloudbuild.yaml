@@ -1,14 +1,19 @@
 steps:
+  - name: 'gcr.io/cloud-builders/gsutil'
+    args: ['cp', 'gs://136_arif/.env', '.']
+
   - name: "gcr.io/cloud-builders/docker"
     args:
-       - "build"
-       - "-f"
-       - "Dockerfile"  # Specify the path to the Dockerfile
-       - "-t"
-       - "gcr.io/$PROJECT_ID/tcc-be"
-       - "backend"  # Set the build context to the backend folder
+      - "build"
+      - "-f"
+      - "Dockerfile"
+      - "-t"
+      - "gcr.io/$PROJECT_ID/tcc-be"
+      - "."
+
   - name: "gcr.io/cloud-builders/docker"
     args: ["push", "gcr.io/$PROJECT_ID/tcc-be"]
+
   - name: "gcr.io/cloud-builders/gcloud"
     args:
       [
@@ -25,10 +30,6 @@ steps:
         "us-central1",
         "--allow-unauthenticated",
       ]
-
-  - name: 'gcr.io/cloud-builders/gsutil'
-    args: ['cp', 'gs://136_arif/.env', '.']
-
 
 options:
   logging: CLOUD_LOGGING_ONLY
