@@ -19,7 +19,7 @@ steps:
       [
         "run",
         "deploy",
-        "be",
+        "be", #ini diganti
         "--image",
         "gcr.io/$PROJECT_ID/tcc-be",
         "--timeout",

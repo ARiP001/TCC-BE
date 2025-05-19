@@ -59,7 +59,7 @@ Content-Type: application/json
 ### 
 
 GET http://localhost:7000/users
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwibmFtZSI6ImpvaG4gZG9lIiwiZW1haWwiOiJqb2huZG9lQGdtYWlsLmNvbSIsImdlbmRlciI6IkZlbWFsZSIsImNyZWF0ZWRBdCI6IjIwMjUtMDUtMTNUMTU6NTg6MDguMDAwWiIsInVwZGF0ZWRBdCI6IjIwMjUtMDUtMTRUMDg6MDY6MTEuMDAwWiIsImlhdCI6MTc0NzIxMDAxNywiZXhwIjoxNzQ3MjEwMDQ3fQ.n6ILDeowV2JZzu0cfoI9L8T89VbAuh0_q3nZqoIcBTo
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwibmFtZSI6ImpvaG4gZG9lIiwiZW1haWwiOiJqb2huZG9lQGdtYWlsLmNvbSIsImdlbmRlciI6IkZlbWFsZSIsImNyZWF0ZWRBdCI6IjIwMjUtMDUtMTNUMTU6NTg6MDguMDAwWiIsInVwZGF0ZWRBdCI6IjIwMjUtMDUtMThUMDU6NTA6MDEuMDAwWiIsImlhdCI6MTc0NzU0ODY4OCwiZXhwIjoxNzUwMTQwNjg4fQ.nF4GwQX2SW9avNlAWnA-C5oCz1BQqmrW72vUk2WTQC4
 ###
 
 
@@ -81,7 +81,7 @@ DELETE http://localhost:7000/logout/7
 
 ###
 
-POST http://localhost:7000/login
+POST https://be-713031961242.us-central1.run.app/login
 Content-Type: application/json
 
 {
