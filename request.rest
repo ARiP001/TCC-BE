@@ -81,7 +81,7 @@ DELETE http://localhost:7000/logout/7
 
 ###
 
-POST https://be-713031961242.us-central1.run.app/login
+POST http://localhost:7000/login
 Content-Type: application/json
 
 {
@@ -93,4 +93,4 @@ Content-Type: application/json
 
 ###
 GET http://localhost:7000/token
-Cookie: refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwibmFtZSI6ImpvaG4gZG9lIiwiZW1haWwiOiJqb2huZG9lQGdtYWlsLmNvbSIsImdlbmRlciI6IkZlbWFsZSIsImNyZWF0ZWRBdCI6IjIwMjUtMDUtMTNUMTU6NTg6MDguMDAwWiIsInVwZGF0ZWRBdCI6IjIwMjUtMDUtMTRUMDc6NTk6MjMuMDAwWiIsImlhdCI6MTc0NzIwOTk3MSwiZXhwIjoxNzQ3Mjk2MzcxfQ.0T4oto7B8Kb6fLQG5ljUX002irsnBKiYkMn73N3bjQE
+Cookie: refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwibmFtZSI6ImpvaG4gZG9lIiwiZW1haWwiOiJqb2huZG9lQGdtYWlsLmNvbSIsImdlbmRlciI6IkZlbWFsZSIsImNyZWF0ZWRBdCI6IjIwMjUtMDUtMTNUMTU6NTg6MDguMDAwWiIsInVwZGF0ZWRBdCI6IjIwMjUtMDUtMTlUMTc6MDQ6MTguMDAwWiIsImlhdCI6MTc0NzY3NDc3MCwiZXhwIjoxNzQ3NzYxMTcwfQ.Gewti_BsOSkgsN0OUJ8uzwF0uaYhTiwWJZQZDj2SnXs

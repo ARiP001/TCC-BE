@@ -19,7 +19,7 @@ export const refreshToken = async(req, res)=>{
             const userPlain = user.toJSON(); // Konversi ke object
             const { password: _, refresh_token: __, ...safeUserData } = userPlain;
             const accessToken = jwt.sign(safeUserData,   process.env.ACCESS_TOKEN_SECRET,{
-                expiresIn: '30s'
+                expiresIn: '1h'
             });
             res.json({accessToken});
         });
