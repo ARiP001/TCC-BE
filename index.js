@@ -13,7 +13,9 @@ dotenv.config();
 app.use(cookieParser());
 app.use(cors({ 
     credentials:true,
-    origin:['http://localhost:3000'] 
+    origin:['http://localhost:3000',
+        'https://tcc-notes-arif-dot-e-07-450704.uc.r.appspot.com'
+    ] 
 }));
 app.use(express.json());
 app.get("/", (req, res) => res.render("index"));
